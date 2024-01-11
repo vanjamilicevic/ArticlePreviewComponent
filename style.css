@@ -17,10 +17,6 @@ body {
     margin: 0;
 }
 
-.not-visible {
-    display: none;
-}
-
 .main-content {
     max-width: 800px;
     display: flex;
@@ -155,4 +151,8 @@ body {
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: 12px solid #48556A;
+}
+
+.not-visible {
+    display: none;
 }
