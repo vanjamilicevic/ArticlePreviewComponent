@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.not-visible {
+    display: none;
+}
+
+.main-content {
+    max-width: 800px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.image-section {
+    width: fit-content;
+}
+
+.image {
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content-section {
+    background-color: white;
+    height: calc(100% - 9px);
+    padding: 35px;
+    border-bottom-right-radius: 10px;
+}
+
+.title {
+    color: #48556A;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.description {
+    color: #6E8098;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    margin-bottom: 20px;
+}
+
+.avatar-name-arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar-name-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-container {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.avatar-image {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.name {
+    color: #48556A;
+    font-size: 13px;
+    letter-spacing: 0.12px;
+    font-weight: 700;
+}
+
+.date {
+    color: #9DAEC2;
+    font-size: 13px;
+    letter-spacing: 0.12px;
+}
+
+.arrow-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECF2F8;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    transition: all .5s ease;
+}
+
+.arrow-container:hover {
+    background-color: #6E8098;
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: #6E8098;
+    transition: all 0.5s ease;
+}
+
+.arrow-container:hover .fa-solid {
+    color: white;
+}
+
+.popup-container {
+    position: absolute;
+    top: -64px;
+    left: -103px;
+    display: flex;
+    background-color: #48556A;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+.share,
+.facebook-icon,
+.twitter-icon {
+    margin-right: 10px;
+}
+
+.share {
+    color: #9DAEC2;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.triangle {
+    position: absolute;
+    top: 49px;
+    left: 108px;
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #48556A;
+}
