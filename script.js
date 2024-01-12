@@ -16,14 +16,21 @@ let container = document.getElementById("avatar-name-arrow-container-mobile") //
 let avatar_name_date = document.getElementById("not-hover-design")
 let icons_container = document.getElementById("on-hover-design")
 
-arrow_mobile.addEventListener("mouseover", () => {
-    container.classList.add("on-hover")
-    avatar_name_date.classList.add("not-visible-mobile")
-    icons_container.classList.remove("not-visible-mobile")
+arrow_mobile.addEventListener("click", () => {
+    if(container.classList.contains("on-hover")) {
+        container.classList.remove("on-hover")
+        avatar_name_date.classList.remove("not-visible-mobile")
+        icons_container.classList.add("not-visible-mobile")
+    }
+    else {
+        container.classList.add("on-hover")
+        avatar_name_date.classList.add("not-visible-mobile")
+        icons_container.classList.remove("not-visible-mobile")
+    }
 })
 
-arrow_mobile.addEventListener("mouseleave", () => {
-    container.classList.remove("on-hover")
-    avatar_name_date.classList.remove("not-visible-mobile")
-    icons_container.classList.add("not-visible-mobile")
-})
+// arrow_mobile.addEventListener("mouseleave", () => {
+//     container.classList.remove("on-hover")
+//     avatar_name_date.classList.remove("not-visible-mobile")
+//     icons_container.classList.add("not-visible-mobile")
+// })
